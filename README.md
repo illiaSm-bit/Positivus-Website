@@ -1,11 +1,13 @@
-#Posotivus website 
+## Posotivus website 
 This project was created as part of my professional portfolio to showcase my skills as of April 9, 2026."
 
-##Tech Stack:
+## Tech Stack:
 -HTML
 -SCSS
 -JavaScript
 -GIT
+
+
 
 ## How to Run the Project
 1. Download the project files
