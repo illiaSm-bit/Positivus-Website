@@ -450,6 +450,24 @@ p {
     align-items: center;
   }
 }
+.section_third_workColumn {
+  display: flex;
+  padding: 7rem 6rem 7rem 12.4rem;
+  background-color: #191a23;
+  border-radius: 4.5rem;
+  gap: 6.4rem;
+}
+.section_third_work_column {
+  border-right: 2px solid white;
+}
+.section_third_work_column p {
+  max-width: 28.3rem;
+  max-height: 16.3rem;
+  color: #ffffff;
+}
+.section_third_work_column span {
+  color: #b9ff66;
+}
 
 .card_service {
   border-radius: 4.5rem;
@@ -537,7 +555,6 @@ p {
   background-color: #191a23;
   border-radius: 4.5rem;
   gap: 6.4rem;
-  overflow: hidden;
 }
 @media all and (max-width: 1300px) {
   .workInfo {
@@ -583,6 +600,74 @@ p {
   .workInfo_column span {
     font-size: 1.6rem;
   }
+}
+
+.process_block {
+  margin-bottom: 2.5rem;
+  padding: 4.1rem 6rem;
+  border-radius: 4.5rem;
+  border: 1px solid #191a23;
+  box-shadow: 0 5px 0 0 #191a23;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.process_block_firstPart {
+  display: flex;
+  justify-content: space-between;
+}
+.process_block_off_part p {
+  display: none;
+}
+.process_block div {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.process_block button {
+  padding: 1.5rem;
+  border-radius: 5rem;
+  border: 1px black solid;
+}
+@media all and (max-width: 500px) {
+  .process_block button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .process_block button img {
+    max-width: 1.3rem;
+    max-height: 1.3rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .process_block {
+    max-height: 10rem;
+    padding: 3rem;
+  }
+  .process_block h3 {
+    font-size: 1.8rem;
+  }
+  .process_block h1 {
+    font-size: 3rem;
+  }
+  .process_block button {
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+}
+.process_block_isActive {
+  background-color: #b9ff66;
+}
+.process_block_isActive p {
+  display: flex;
+}
+.process_block_isActive .process_block_firstPart {
+  padding-bottom: 3rem;
+}
+.process_block_isActive .process_block_off_part {
+  border-top: 1px black solid;
+  padding-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

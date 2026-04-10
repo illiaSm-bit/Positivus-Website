@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+.process {
+  &_block {
+    margin-bottom: 2.5rem;
+    padding: 4.1rem 6rem;
+
+    border-radius: $radius-card;
+    border: 1px solid $color-dark;
+    box-shadow: 0 5px 0 0 $color-dark;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+
+    &_firstPart {
+      display: flex;
+
+      justify-content: space-between;
+    }
+
+    &_off_part {
+      p {
+        display: none;
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    button {
+      padding: 1.5rem;
+      border-radius: 5rem;
+      border: 1px black solid;
+      @media all and (max-width: $media-s) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 1.3rem;
+          max-height: 1.3rem;
+        }
+      }
+    }
+
+    @media all and (max-width: $media-s) {
+      max-height: 10rem;
+      padding: 3rem;
+      h3 {
+        font-size: $size-h4-mob;
+      }
+      h1 {
+        font-size: $size-h3;
+      }
+      button {
+        max-width: 3rem;
+        max-height: 3rem;
+      }
+    }
+
+    &_isActive {
+      background-color: $color-green;
+      p {
+        display: flex;
+      }
+
+      .process_block_firstPart {
+        padding-bottom: 3rem;
+      }
+
+      .process_block_off_part {
+        border-top: 1px black solid;
+        padding-top: 3rem;
+      }
+    }
+  }
+}

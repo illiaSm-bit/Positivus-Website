@@ -84,4 +84,26 @@
       align-items: center;
     }
   }
+
+  &_third {
+    &_workColumn {
+      display: flex;
+      padding: 7rem 6rem 7rem 12.4rem;
+      background-color: $color-dark;
+      border-radius: 4.5rem;
+      gap: 6.4rem;
+    }
+    &_work_column {
+      border-right: 2px solid white;
+
+      p {
+        max-width: 28.3rem;
+        max-height: 16.3rem;
+        color: $color-white;
+      }
+      span {
+        color: $color-green;
+      }
+    }
+  }
 }
