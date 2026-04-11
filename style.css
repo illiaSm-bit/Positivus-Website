@@ -625,15 +625,21 @@ p {
   gap: 2.5rem;
 }
 .process_block button {
-  padding: 1.5rem;
-  border-radius: 5rem;
+  width: 5.8rem;
+  height: 5.8rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
   border: 1px black solid;
+  background-color: #ffffff;
 }
 @media all and (max-width: 500px) {
   .process_block button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 3rem;
+    height: 3rem;
   }
   .process_block button img {
     max-width: 1.3rem;
@@ -642,7 +648,6 @@ p {
 }
 @media all and (max-width: 500px) {
   .process_block {
-    max-height: 10rem;
     padding: 3rem;
   }
   .process_block h3 {
@@ -651,9 +656,8 @@ p {
   .process_block h1 {
     font-size: 3rem;
   }
-  .process_block button {
-    max-width: 3rem;
-    max-height: 3rem;
+  .process_block_block_inner {
+    gap: 3.3rem;
   }
 }
 .process_block_isActive {
@@ -668,6 +672,15 @@ p {
 .process_block_isActive .process_block_off_part {
   border-top: 1px black solid;
   padding-top: 3rem;
+}
+@media all and (max-width: 500px) {
+  .process_block_isActive p .process_block_firstPart {
+    padding-bottom: 1.5rem;
+  }
+  .process_block_isActive p .process_block_off_part {
+    border-top: 1px black solid;
+    padding-top: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
