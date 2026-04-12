@@ -1,0 +1,58 @@
+@use "variables" as *;
+.team {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 3.9rem;
+
+  &_button {
+    background-color: $color-dark;
+    font-size: $size-btn;
+    font-family: $font-family;
+    color: $color-white;
+    font-weight: $weight-regular;
+    border-radius: 1.4rem;
+    padding: 2.5rem 7.5rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease;
+  }
+  &_button:hover {
+    background-color: $color-green;
+    color: $color-dark;
+  }
+
+  &_card {
+    padding: 3.5rem 4rem;
+    border: 1px black solid;
+    border-radius: 4.5rem;
+    width: 38.7rem;
+    height: 33.1rem;
+    box-shadow: 0 5px 0 0 $color-dark;
+    &_upper {
+      display: flex;
+      padding-bottom: 2.8rem;
+      border-bottom: 1px black solid;
+    }
+
+    &_down {
+      padding-top: 2.8rem;
+    }
+  }
+
+  &_card_left {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+
+    p {
+      width: 14.8rem;
+    }
+  }
+
+  &_card_right {
+    align-items: flex-end;
+    top: 15px;
+    right: 15px;
+  }
+}
